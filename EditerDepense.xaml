@@ -1,0 +1,38 @@
+﻿<Window x:Class="IHM.EditerDepense"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IHM"
+        mc:Ignorable="d"
+        Title="EditerDepense" Height="450" Width="800">
+    <Grid>
+        <Label Content="Total" HorizontalAlignment="Left" Margin="50,309,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.629,-0.692"/>
+        <Label Content="Valeur" HorizontalAlignment="Left" Margin="445,119,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.605,-1.231"/>
+        <Label Content="Dépense du séjour" HorizontalAlignment="Left" Margin="50,23,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.605,0.192"/>
+        <Label Content="Famille" HorizontalAlignment="Left" Margin="445,255,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.064,0.923"/>
+        <Label Content="Type de dépense" HorizontalAlignment="Left" Margin="445,57,0,0" VerticalAlignment="Top"/>
+        <Label Content="Date" HorizontalAlignment="Left" Margin="445,190,0,0" VerticalAlignment="Top"/>
+        <ListView HorizontalAlignment="Left" Height="233" Margin="50,57,0,0" VerticalAlignment="Top" Width="276">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ListView HorizontalAlignment="Left" Height="26" Margin="115,309,0,0" VerticalAlignment="Top" Width="211">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Name ="nouvelle_depense" Content="Nouvelle dépense" HorizontalAlignment="Left" Margin="489,367,0,0" VerticalAlignment="Top" Width="159" RenderTransformOrigin="-0.413,7.2" Click="Btn_nouvelle_depense"/>
+        <Button Content="Supprimer la dépense" HorizontalAlignment="Left" Margin="133,367,0,0" VerticalAlignment="Top" Width="143"/>
+        <ComboBox Name="cbType" HorizontalAlignment="Left" Margin="606,61,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="CbType_SelectionChanged" IsDropDownOpen="True"/>
+        <ComboBox Name="cbDate" HorizontalAlignment="Left" Margin="606,194,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cbDate_SelectionChanged" IsDropDownOpen="True"/>
+        <ComboBox Name="cbFamille" HorizontalAlignment="Left" Margin="606,255,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cbFamille_SelectionChanged" IsDropDownOpen="True"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="606,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

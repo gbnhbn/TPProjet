@@ -1,0 +1,26 @@
+﻿<Window x:Class="IHM.EditerFamille"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IHM"
+        mc:Ignorable="d"
+        Title="EditerFamille" Height="450" Width="800">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="43,48,0,0" TextWrapping="Wrap" Text="Nom de la famille" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="66,113,0,0" TextWrapping="Wrap" Text="Membres" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Nouvel adulte" HorizontalAlignment="Left" Margin="622,271,0,0" VerticalAlignment="Top" Width="100" Height="24" Click="Nouvel_adulte"/>
+        <Button Content="Valider" HorizontalAlignment="Left" Margin="634,47,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.613,-0.081" Click="Valider"/>
+        <Button Content="Nouvel enfant" HorizontalAlignment="Left" Margin="490,271,0,0" VerticalAlignment="Top" Width="108" Height="24" Click="Nouvel_enfant"/>
+        <TextBox Name="tbName" HorizontalAlignment="Left" Height="23" Margin="205,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" TextInput="TbName_TextInput"/>
+        <TextBox Name ="tbPrenom" HorizontalAlignment="Left" Height="23" Margin="508,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="201"/>
+        <ListView x:Name="ListPrenom" HorizontalAlignment="Left" Height="236" Margin="43,154,0,0" VerticalAlignment="Top" Width="341">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+    </Grid>
+</Window>
