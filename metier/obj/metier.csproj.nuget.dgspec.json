@@ -1,0 +1,78 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Program\\metier\\metier.csproj": {}
+  },
+  "projects": {
+    "D:\\Program\\metier\\metier.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Program\\metier\\metier.csproj",
+        "projectName": "metier",
+        "projectPath": "D:\\Program\\metier\\metier.csproj",
+        "packagesPath": "C:\\Users\\Ngoc\\.nuget\\packages\\",
+        "outputPath": "D:\\Program\\metier\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Ngoc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "D:\\Program\\test\\test.csproj": {
+                "projectPath": "D:\\Program\\test\\test.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Program\\test\\test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Program\\test\\test.csproj",
+        "projectName": "test",
+        "projectPath": "D:\\Program\\test\\test.csproj"
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    }
+  }
+}
